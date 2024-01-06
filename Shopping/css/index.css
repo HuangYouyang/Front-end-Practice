@@ -162,3 +162,65 @@
 .like-item-intro h3{
     color: #df3033;
 }
+
+.jiadian{
+    margin-top: 20px;
+}
+
+.box-hd{
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box-hd h3{
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+.box-hd .tab-list{
+    float: right;
+}
+.box-hd .tab-list ul li{
+    float: left;
+    line-height: 30px;
+}
+.box-hd .tab-list ul li a{
+    margin: 0 15px;
+}
+.box-bd{
+    height: 361px;
+}
+.tab-list-item-1>div{
+    float: left;
+}
+.col-210{
+    width: 210px;
+    background: #f9f9f9;
+    text-align: center;
+}
+.col-210 ul li{
+    display: inline-block;
+    float: left;
+    height: 33px;
+    width: 85px;
+    margin: 0 8px;
+    border-bottom: 1px solid #ededed;
+    line-height: 32px;
+}
+.col-328{
+    width: 328px;
+}
+.col-220{
+    width: 220px;
+}
+.col-220 img:first-child{
+    border-bottom: 1px solid #ededed;
+}
+.col-222{
+    width: 222px;
+    border-right: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+}
+.tab-content a img{
+    height: 100%;
+}

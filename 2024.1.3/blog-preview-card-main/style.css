@@ -11,12 +11,16 @@
     box-sizing: border-box;
 }
 
+html{
+  --primary--color: hsl(47, 88%, 63%);
+}
+
 a{
     text-decoration: none;
 }
 
 body{
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--primary--color);
     font-size: 16px;
     font-family: 'Figtree';
 }
@@ -49,7 +53,7 @@ p{
   margin-top: 20px;
   height: 30px;
   width: 100px;
-  background-color: hsl(47, 88%, 63%);
+  background-color: var(--primary--color);
   border-radius: 5px;
   text-align: center;
   line-height: 30px;
@@ -80,3 +84,9 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 375px) {
+  .attribution {
+    display: none;
+  }
+}
