@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+        * {
+            box-sizing: border-box;
+            -webkit-user-select:none;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        body {
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            background-color: #333;
+            color: #222;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .container{
+            position: absolute;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            padding: 10vh 15vw;
+            background: white;
+            transform-origin: 0% 0%;
+            transition: transform 0.5s linear;
+        }
+        .box.show-nav > .container{
+            transform: rotate(-30deg);
+            transition: transform 0.5s linear;
+        }
+        .change{
+            position: absolute;
+            z-index: 20;
+            top: -100px;
+            left: -100px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: #ff7979;
+            transition: transform 0.5s linear;
+        }
+        .box.show-nav > .change{
+            transform: rotate(-90deg);
+            transition: transform 0.5s linear;
+        }
+        .menu,
+        .close{
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        .menu{
+            position: absolute;
+            top: 60%;
+            left: 60%;
+        }
+        .close{
+            position: absolute;
+            top: 60%;
+            left: 15%;
+        }
+        ul{
+            position: fixed;
+            z-index: 1;
+            top: 70vh;
+            left: 0px;
+        }
+        ul li{
+            color: white;
+            margin-left: 10px;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease-in;
+        }
+        ul li + li {
+            margin-left: 20px;
+            transform: translateX(-150%);
+        }
+        ul li + li + li {
+            margin-left: 30px;
+            transform: translateX(-200%);
+        }
+        .box.show-nav > ul li{
+            transform: translateX(0);
+            transition-delay: 0.3s;
+        }
+        ul a{
+            display: inline-block;
+            margin: 20px;
+            color: white;
+            font-size: 21px;
+        }
