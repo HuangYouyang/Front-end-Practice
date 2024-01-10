@@ -1,3 +1,4 @@
+
 var inputObj=document.querySelector("input");
 var buttonObj=document.querySelector(".search");
 buttonObj.onclick=()=>{
